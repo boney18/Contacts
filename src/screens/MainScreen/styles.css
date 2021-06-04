@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:500,700&display=swap');
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: #E9EBF0;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.smooth {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.3, 0, 0.4, 1);
+    transition-timing-function: cubic-bezier(0.3, 0, 0.4, 1);
+    opacity: 0;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+    
+    
+}
+#inputBox{
+    width:25%;
+    appearance: none;
+    border-radius: 0.8vh;
+    padding: 0 1.6rem;
+   
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 50px;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 8fr)); */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    
+  
+}
+.smooth.loaded {
+    opacity: 1;
+}
+#area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    
+
+}
